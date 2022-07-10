@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-brand {
   font-weight: 700;
   font-size: 20px;
@@ -44,7 +48,7 @@ section {
   bottom: 16px;
   right: 32px;
   width: 50px;
-  border-radius: 50%;
+  border-radius: 20%;
   display: flex;
   align-items: center;
   justify-content: center;

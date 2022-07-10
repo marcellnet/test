@@ -53,6 +53,7 @@
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Music | Wifi</p>
       </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Contact Us</button>  
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -134,20 +135,30 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <div class="alert alert-success alert-dismissible fade show d-none" id="myalert" role="alert">
+              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="mrc-contact">
               <div class="mb-3">
                 <label class="form-label">Nama Lengkap</label>
                 <input class="form-control" type="text" id="nama" placeholder="Nama" required />
+                <small class="error" id="error"></small>
               </div>
               <div class="mb-3">
                 <label class="form-label">Whatsapp</label>
-                <input class="form-control" type="tel" maxlength="20" type="text" id="nomer" placeholder="08xxxxxxxxxxxx" required />
+                <input class="form-control" type="tel" maxlength="20" type="text" id="nomer" placeholder="nomer" required />
               </div>
               <div class="mb-3">
                 <label class="form-label">Pesan</label>
                 <textarea class="form-control" type="text" id="pesan" placeholder="Pesan" rows="3" required></textarea>
               </div>
-              <input class="btn btn-primary" type="submit" id="kirim" value="KIRIM" onclick="kirimPesan()" />
+              <input class="btn btn-primary" type="submit" id="kirim" value="KIRIM" onclick="kirimPesan()">
+            
+              <button class="btn btn-primary btn-loading d-none" type="button" id="btnloading" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
