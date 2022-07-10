@@ -1,0 +1,107 @@
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.display-4 {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.lead,
+h2 {
+  font-weight: 700;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #e2edff;
+}
+
+#project {
+  background-color: #ffffff;
+}
+
+#contact {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.to-top {
+  background: #3180ff;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #0cf5af;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+.follow {
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
