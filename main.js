@@ -8,12 +8,12 @@ function buttonClick() {
   var token = "5493881306:AAHK-1aPwfqTi4I0nLZc838tBq9WSS73yIA";
   var grup = "5111025809";
 
-  console.log("aoujsfhouihwqfuoiha");
-
   $.ajax({
     url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
     method: `POST`,
   });
+
+  console.log("berhasil");
 }
 
 // on top
