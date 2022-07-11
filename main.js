@@ -1,4 +1,4 @@
-function kirimPesan() {
+function buttonClick() {
   var nama = document.getElementById("nama");
   var nomer = document.getElementById("nomer");
   var pesan = document.getElementById("pesan");
