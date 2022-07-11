@@ -163,17 +163,17 @@
             <form name="marcell-contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+                <input type="text" class="form-control" id="nama" aria-describedby="name" name="nama" />
               </div>
               <div class="mb-3">
                 <label for="tel" class="form-label">No Whatsapp</label>
-                <input type="tel" class="form-control" id="email" aria-describedby="tel" name="nomer" />
+                <input type="tel" class="form-control" id="nomer" aria-describedby="tel" name="nomer" />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-kirim" onclick="buttonClick()">Kirim</button>
 
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -245,11 +245,11 @@
                 myAlert.classList.toggle('d-none');
                 // reset formnya
                 form.reset();
-                console.log('Success!', response);
+                console.log('Success!');
               })
-              .catch((error) => console.error('Error!', error.message));
+              .catch((error) => console.error('Error!'));
           });
         </script>
   </body>
-  <!-- <script src="main.js"></script> -->
+  <script src="main.js"></script>
 </html>
